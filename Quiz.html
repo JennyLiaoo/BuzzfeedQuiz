@@ -1,0 +1,69 @@
+<!Doctype html>
+<head>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+<h1>A Very Sketchy Quiz!</h1><br>
+<div class="all">
+    <div class="first">
+        <h4>Are You ready for the quiz?</h4>
+        <input type="radio" id=ummm name="quiz" value="ummm"/>
+        <label for="ummm">ummm</label><br>
+        <input type="radio" id=maybe name="quiz" value="maybe"/>
+        <label for="maybe">maybe</label><br>
+        <input type="radio" id=yes name="quiz" value="yes"/>
+        <label for="yes">yes</label><br>
+        <input type="radio" id=no name="quiz" value="no"/>
+        <label for="no">no</label>
+    </div>
+
+    <div class="second">
+        <h4>Do you like food?</h4>
+        <input type="checkbox" id="food" name="food" value="food">
+        <label for="food">yum, yes I do!</label><br>
+
+        <h4>What is your favorite animal?</h4>
+        <label for="others">please specify:</label>
+        <input type="text" id="others" name="animals">
+    </div>
+
+    <div class="third">
+        <h4>Want free money?</h4>
+        <label for="money">your answer:</label>
+        <select id="money" name="money">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+    </div>
+
+    <div class="fourth">
+        <h4>How much?</h4>
+        <label for="quantity">Quantity $$$ (1-100,000,000): $</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100000000"><br>
+    </div>
+
+    <div class="fourth">
+        <h4>Recieve your money :)</h4>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+    </div>
+
+    <div class="fifth">
+        <label for="credit"> Please enter your credit card number here:</label>
+        <input type="text" id="credit" name="creditcard"><br>
+    </div>
+
+    <div class="submission">
+        <button onclick="submit()">sUbmIT</button>
+        <button onclick="cancel()">cAnCeL</button>
+    </div>
+
+    <br><br><br>
+
+    <div id="printout">
+    </div>
+
+</div>
+
+<script src="Quiz.js"></script>
+</body>
